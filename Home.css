@@ -1,0 +1,159 @@
+.afterheader{
+    margin-top: 2px;
+    margin-left: 12%;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0px;
+    padding-left: 10px;
+    background-color: lightgray;
+}
+.banner{
+    width: 400%;
+    height: 300px !important;
+    position: relative;
+    left: 0;
+    margin: 0;
+    animation: 16s slider infinite ;
+}
+
+
+.bannercont{
+    overflow: hidden;
+    width: 100%;
+    margin-top: 40px;
+    max-height: 300px;
+}
+@keyframes slider{
+    0%{
+        left:0;
+    }
+    16%{
+        left:0%;
+    }
+    22%{
+        left: -100%;
+    }
+    40%{
+        left: -100%;
+    }
+    45%{
+        left: -200%;
+    }
+    62%{
+        left:-200%;
+    }
+    70%{
+        left: -300%;
+    }
+    80%{
+        left: -300%;
+    }
+
+}
+.banner img{
+
+    float: left;
+    width: 25%;
+    height: 100% !important;
+}
+.list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.list li{
+    flex: 0 0 33%;
+    max-width: 33%;
+}
+.menu_bar{
+    width: 100vw;
+    position: fixed;
+    z-index: 2;
+    
+}
+.block{
+    width: 100vw;
+}
+.menu_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    background-color: white;
+    color: black;
+    width: 100%;
+    padding: 5px 20px;
+    height: 32px;
+}
+.kb{
+    height: 100%;
+    font-size: 0.8em !important;
+}
+
+.menu_list li{
+    padding: 0px 10px;
+    width: 20%;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.menu_list li:hover{
+    /* background-color: black; */
+    color: blue;
+    cursor: pointer;
+    
+    
+}
+.submenu_1{
+    display: none;
+}
+.menu_list li:hover .submenu_1 {
+    display: block;
+    z-index: 900;
+    position: absolute;
+    margin-top: 22px;
+    width: 15%;
+    margin-left: -6px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.submenu_1:hover{
+    display: block;
+    z-index: 900;
+    position: absolute;
+    margin-top: 22px;
+    width: 15%;
+    padding-top: 10px;
+    margin-left: -6px;
+    cursor: pointer;
+
+}
+.menu_list li:hover .kb {
+transform: rotate(180deg);
+}
+.menu_list li .submenu_1 ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    background-color: white;
+    color: black;
+    width: 100%;
+    padding: 5px 20px;
+    border: 1px solid lightblue;
+    border-top: none;
+}
+.menu_list li:hover .submenu_1 ul li{
+    width: 90%;
+    height: 30px;
+}
+.submenu_1 ul li:hover{
+    background-color: aliceblue;
+}

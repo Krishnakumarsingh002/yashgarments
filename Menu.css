@@ -1,0 +1,20 @@
+.menubar{
+    min-width: 14vw;
+    padding-left: 0px;
+    
+}
+.menubar h5{
+    color : white;
+    padding : 5px 20px;
+    border: solid 2px white;
+}
+.menubar ul{
+    color: white;
+    font-size: 19px;
+    list-style: none;
+}
+.menubar li{
+padding: 8px;
+padding-left: 15px;
+border: solid 2px white;
+}
